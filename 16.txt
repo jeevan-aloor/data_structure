@@ -1,0 +1,7 @@
+Odd Sum Below N
+
+num=int(input())
+j=0
+for i in range(1,num+1,2):
+    j=j+i
+print(j)

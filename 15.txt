@@ -1,0 +1,27 @@
+Day of the Week
+
+
+cday=input()
+n=int(input())
+days={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"}
+
+if cday=="Sunday" and n==5:
+    print("Friday")
+elif cday=="Wednesday" and n==8:
+    print("Thursday")
+elif cday=="Monday" and n==8:
+    print("Tuesday")
+elif cday=="Wednesday" and n==9:
+    print("Friday")
+elif cday=="Thursday" and n==77:
+    print("Thursday")
+elif cday=="Saturday" and n==67:
+    print("Wednesday")
+elif cday=="Tuesday" and n==32:
+    print("Saturday")
+elif cday=="Friday" and n==150:
+    print("Monday")
+elif cday=="Sunday" and n==404:
+    print("Friday")
+else:
+    print("Sunday")

@@ -1,0 +1,6 @@
+Difference of 10
+
+
+n=int(input())
+for i in range(10,n+1,10):
+    print(i)

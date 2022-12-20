@@ -1,0 +1,14 @@
+The JEE
+
+p1,c1,m1=map(int,input().split())
+p2,c2,m2=map(int,input().split())
+s1=p1+c1+m1
+s2=p2+c2+m2
+if s1>s2:
+    print("First")
+elif s2>s1:
+    print("Second")
+elif s1==s2 and m1>m2:
+    print("First")
+else:
+    print("Second")

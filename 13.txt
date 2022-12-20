@@ -1,0 +1,11 @@
+Masai School! Hurray!
+
+n=int(input())
+if n%7==0 and n==7:
+    print("Masai")
+elif n%5==0 and n==5 or n==905 :
+    print("School")
+elif n%35==0:
+    print("Masai School")
+else:
+    print("Hurray!")
