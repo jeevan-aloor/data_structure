@@ -1,0 +1,11 @@
+Multiplication Table of 3
+
+function multiplicationTable3() {
+    // Write code here
+     let s=3;
+    while(s<=3*10){
+        console.log(s)
+        s+=3
+    }
+    
+}

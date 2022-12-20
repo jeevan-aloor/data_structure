@@ -1,0 +1,10 @@
+Sum Two Equations
+
+
+function sumTwoEqs(a, b) {
+  // write code here
+  x=(a*5)+(b*3)
+  y=(a*7)+(b*4)
+  sum=x+y
+  console.log(sum)
+}

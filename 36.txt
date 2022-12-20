@@ -1,0 +1,22 @@
+Battle of Odd & Even
+
+
+function battleOfOddAndEven(n, arr){
+    //write code here
+    odd=0;
+    for(i=0;i<=arr.length-1;i++){
+        if(arr[i]%2!=0){
+            odd=odd+arr[i]
+        }
+    }
+    even=0;
+    for(i=0;i<=arr.length-1;i++){
+        if(arr[i]%2==0){
+            even=even+arr[i]
+        }
+    }if(odd>even){
+        console.log("Odd")
+    }else{
+        console.log("Even")
+    }
+}

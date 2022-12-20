@@ -1,0 +1,12 @@
+Enough Fuel Consumption
+
+
+function enoughFuelConsumption(fuel, distance) {
+    //write code here
+    required = fuel*distance 
+    if (required>50){
+        console.log("Enough")
+    }else{
+        console.log("Go On")
+    }
+}

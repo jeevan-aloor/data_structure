@@ -1,0 +1,17 @@
+Equal to 42 or not!
+
+function equalTo42(size,arr) {
+    //write code here
+    count=0;
+    for(i=0;i<=arr.length-1;i++){
+        if(arr[i]==42){
+            count++
+        }
+    }if(count>0){
+        console.log("Yes")
+    }else{
+        console.log("No")
+    }
+   
+   
+}
