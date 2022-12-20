@@ -1,0 +1,4 @@
+Cube of a number
+
+N=int(input())
+print(N**3)

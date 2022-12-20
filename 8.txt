@@ -1,0 +1,5 @@
+Find X
+
+X=int(input())
+a=(X*3)
+print(a+10)

@@ -1,0 +1,5 @@
+Product of Numbers II
+
+A,B,C=map(int,input().split())
+D=(A*B)+C
+print(D)

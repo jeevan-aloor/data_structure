@@ -1,0 +1,7 @@
+Multiply by 50
+
+
+number=input()
+number=int(number)
+numberby50=number*50
+print(numberby50)

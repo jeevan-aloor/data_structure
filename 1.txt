@@ -1,0 +1,4 @@
+###  print masai school
+
+print("Masai School")
+print("A Transformation in Education")

@@ -1,0 +1,6 @@
+Sum of Natural Numbers
+
+
+N=input()
+N=int(N)
+print(N*(N +1)//2)
