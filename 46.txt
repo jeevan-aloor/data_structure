@@ -1,0 +1,15 @@
+Vowel & Consonant Count
+
+function vowelAndConsonantCount(N, str) {
+  //write code here
+  vowels=0;
+  consonatns=0;
+  for(i=0;i<=str.length-1;i++){
+      if(str[i]=="a"||str[i]=="e"||str[i]=="i"||str[i]=="o"||str[i]=="u"){
+          vowels++
+      }else{
+          consonatns++
+      }
+  }console.log(vowels,consonatns)
+  
+}

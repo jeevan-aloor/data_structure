@@ -1,0 +1,15 @@
+Pattern of N
+
+
+function patternOfN(N) {
+    // Write code here
+let count=0;
+    for(i=1;i<=N;i++){
+        let str="";
+        for(j=1;j<=N;j++){
+        count++
+        str=str+count+" "
+    }console.log(str)
+    }
+    
+}

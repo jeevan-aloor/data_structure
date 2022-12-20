@@ -1,0 +1,25 @@
+Go in Zig-Zag
+
+
+function goInZigZag(N, M, matrix){
+    //write code here
+    let sum1=""
+    for(i=0;i<=N-1;i++){
+        
+        if(i%2==0){
+            // let sum1=""
+            for(j=M-1;j>=0;j--){
+                sum1=sum1+matrix[i][j]+" "
+            }
+            // console.log(sum1)
+        }else{
+            // let sum2=""
+            for(j=0;j<=M-1;j++){
+                sum1=sum1+matrix[i][j]+" "
+            }
+            // console.log(sum2)
+        }
+    }console.log(sum1)
+    
+  
+}

@@ -1,0 +1,12 @@
+Map Symbols
+
+
+function mapSymbols(N) {
+    // Write code here
+    arr=['!','@','#','$','%','^','&','*'];
+    S=N-2
+
+    for(i=0;i<=arr.length-1;i++){
+        console.log(arr[i]+"-"+(S+=2));
+    }
+}

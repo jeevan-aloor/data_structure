@@ -1,0 +1,15 @@
+Traverse a 2d array - 3
+
+function traverse2dArray(N, M, matrix){
+    //write code here
+    let sum=""
+    for(i=M-1;i>=0;i--){
+        // let sum=""
+        // let res=""
+        for(j=0;j<=N-1;j++){
+            sum=sum+matrix[j][i]+" "
+            
+        }
+    }console.log(sum)
+  
+}
