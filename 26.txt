@@ -1,0 +1,16 @@
+Week Days
+
+def day_of_week(day,month,year):
+   t = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4]
+   year -= month < 3
+   return (year + int(year/4) - int(year/100) + int(year/400) + t[month-1] + day) % 7
+t=int(input())
+for i in range(t):
+    date = input()
+    validValues = date.split('/')
+    day = int(validValues[0])
+    month = int(validValues[1])
+    year = int(validValues[2])
+    result = day_of_week(day, month, year)
+    dayofWeek = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    print(dayofWeek[result])

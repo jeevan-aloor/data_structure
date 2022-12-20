@@ -1,0 +1,57 @@
+Check Your Password
+
+
+function Password(size,arr){
+    let count=0
+    let count2=0
+    let half=arr.length/2
+    for(let i=0;i<size;i++){
+        if(arr[i]=="a" ||arr[i]=="b" ||arr[i]=="c" ||arr[i]=="d" ||arr[i]=="e" ||arr[i]=="f" ||arr[i]=="g" ||arr[i]=="h" ||arr[i]=="i" ||arr[i]=="j" ||arr[i]=="k" ||arr[i]=="l" ||arr[i]=="m" ||arr[i]=="n" ||arr[i]=="o" ||arr[i]=="p" ||arr[i]=="q" ||arr[i]=="r" ||arr[i]=="s" ||arr[i]=="t" ||arr[i]=="u" ||arr[i]=="v" ||arr[i]=="w" ||arr[i]=="x" ||arr[i]=="y" ||arr[i]=="z" ){
+            count++
+        }
+         if(arr[i]==1||arr[i]==2||arr[i]==3||arr[i]==4||arr[i]==5||arr[i]==6||arr[i]==7||arr[i]==8||arr[i]==9||arr[i]==0){
+            count2++
+        }
+    }
+    if(count>half && count2>=1){
+        console.log("Strong")
+    }else{
+        console.log("Weak")
+        
+    }
+   
+}
+
+function runProgram(input){
+input=input.trim().split("\n")
+let tc=+input[0].trim()
+let line=1
+for(let i=0;i<tc;i++){
+    let size=+input[line].trim()
+    line++
+    let arr=input[line].trim().split("")
+    line++
+    Password(size,arr)
+    
+}
+}
+if (process.env.USER === "") {
+    runProgram(``);
+} else {
+        process.stdin.resume();
+  process.stdin.setEncoding("ascii");
+  let read = "";
+  process.stdin.on("data", function (input) {
+        read += input;
+  });
+  process.stdin.on("end", function () {
+        read = read.replace(/\n$/, "");
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+  });
+  process.on("SIGINT", function () {
+        read = read.replace(/\n$/, "");
+    runProgram(read);
+    process.exit(0);
+  });
+}
